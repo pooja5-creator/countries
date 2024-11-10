@@ -1,0 +1,79 @@
+.shimmerDiv{
+    background-color: var(--background-color);
+    color:var(--text-color);
+    min-height: calc(100vh - 72px);
+}
+.shimmerDiv.dark{
+    --background-color:#070707;
+    --text-color:rgb(236, 225, 225);
+    --element-color: hsl(60, 1%, 21%);
+}
+.ShimmerDetail{
+   max-width: 1200px;
+ margin: 0 auto;
+ padding: 20px;
+
+}
+.ShimmerDetail p{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(67, 62, 62);
+  
+}
+.ShimmerDetail .containerOfShim{
+    min-height: 250px;
+   
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 50px;margin-top: 50px;
+    gap: 20px;
+    /* background-color: red; */
+}
+.containerOfShim .flagContainer{
+height: 250px;
+width: 100%;
+background-color: rgb(51, 51, 56);
+border-radius: 20px;
+}
+.tagesShimer{
+   
+    height: 40%;
+  /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+.tagesShimer h1{
+    height: 30px;
+    width: 150px;
+    background-color: #443d3d;
+    border-radius: 10px;
+}
+.tagesShimer h2{
+    height: 30px;
+    width: 150px;
+    background-color: #373434;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.tagesShimer p{
+    height: 30px;
+    width: 150px;
+    background-color: #363434;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+@media (max-width:768px) {
+    .ShimmerDetail .containerOfShim{
+        flex-direction: column;
+        
+    }
+}
